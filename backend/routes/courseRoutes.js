@@ -6,6 +6,7 @@ import {
   getAllCourses,
   getAssignments,
   getQuizzes,
+  updateCourseDetails,
 } from "../controllers/courseController.js";
 import { authenticate, authorize } from "../middleware/authMiddleware.js";
 
@@ -13,6 +14,13 @@ const router = express.Router();
 
 router.post("/create", authenticate, authorize(["Admin"]), createCourse);
 router.get("/get", getAllCourses);
+// Update course details by adding students, assignments, or quizzes
+router.patch(
+  "/:id/update",
+  authenticate,
+  authorize(["Admin"]),
+  updateCourseDetails
+);
 
 // Routes for assignments
 router.post(
