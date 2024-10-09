@@ -4,9 +4,9 @@ import { authenticate, authorize } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
-router.post("/", authenticate, authorize(["Teacher"]), assignGrade);
+router.post("/add", authenticate, authorize(["Teacher"]), assignGrade);
 router.get(
-  "/",
+  "/get",
   authenticate,
   authorize(["Admin", "Teacher", "Student"]),
   getGrades
