@@ -45,7 +45,7 @@ export const updateCourseDetails = async (req, res, next) => {
   const { students, assignments, quizzes } = req.body;
 
   try {
-    // Fetch course by ID
+    // Fetch course by id
     const course = await Course.findByIdAndUpdate(id);
 
     if (!course) {
