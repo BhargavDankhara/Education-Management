@@ -48,7 +48,8 @@ To set up the project locally, follow these steps:
 
 
    
-##api-endpoints
+## api-endpoints
+
 update-course
 ![update-course](https://github.com/user-attachments/assets/d154cdcc-04ab-49e1-904e-fd145e16d471)
 signup
