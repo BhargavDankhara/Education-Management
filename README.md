@@ -44,7 +44,7 @@ To set up the project locally, follow these steps:
 - MONGO_URI=your url
 - PORT=5000
 - JWT_SECRET= your sec
-- NODE_ENV=development
+
 
 
    
